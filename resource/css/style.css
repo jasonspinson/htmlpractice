@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*---fisrt Set Up---*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+h1{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 200%;
+}   
+
+h2{
+    font-weight: 400;
+    text-align: center; 
+    margin-top: 30px;
+    display: block;
+    font-size: 150%;
+}
+
+h3{
+    font-weight: 500;
+    padding-left: 30px;
+    margin: 1%;
+}
+
+/*---for the container---*/
+
+.row{
+    width:1140px;
+    margin: 0 auto;
+}
+
+
+
+/*---social link---*/
+
+.social-link{
+    height: 40px;
+    background-color: #e2e2e2;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social-link li{
+    float: right;
+    display: block;
+    margin-right: 40px;
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.social-link li a{
+    text-decoration: none;
+    border:0;
+
+}
+
+.facebooklink{
+    color: #3b5999;
+}
+
+.twitterlink{
+    color:#55acee;
+}
+
+/*--------home and menu--------*/
+
+.main-menu-block{
+    height: 50px;
+    line-height: 50px;
+}
+
+.main-menu li{
+    float:right;
+    margin-right:50px;
+    display: block;
+}
+
+.homebtn{
+    padding-left: 50px;
+}
+
+.main-menu li a:link,
+.main-menu li a:visited{
+    text-decoration: none;
+    color: #2ed89f;
+    font-weight: 400;
+    text-align: center;
+    border-bottom:2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.main-menu li a:hover,
+.main-menu li a:active{
+    
+    border-bottom:2px solid #2ed89f;
+}
+
+/*--------reusable-------------*/
+
+.clearfix{zoom: 1;}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*--------header photo-------------*/
+
+.main-photo{
+    width: 100%;
+    background-image: url(img/fabian-grohs-550489-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+}
+
+.main-photo-text{
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 5%;
+}
+
+/*--------feature box-------------*/
+
+.section-lesson-feature{
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.feature-box{
+    display: block;
+    padding-left: 6%;
+    box-shadow:0 1px 1px #efefef;
+}
+
+
+.feature-box img{
+    width: auto;
+    height:100%;
+    margin: 2%;
+    padding-left: 8%;
+}
+
+.feature-box p {
+    display: block;
+    width:250px;
+    height: 96px;
+    font-size: 70%;
+}
+
+/*---table content---*/
+
+.tableclass{
+    display: block;
+    margin: 5%;
+}
+
+.tableclass th{
+    height: auto;
+    width: 285px;
+    text-align: left;
+    padding: 1%;
+    border-top: 1px solid #b4b4b4;
+    background-color: #e0e0e0;
+    font-weight: 500;
+}
+
+.tableclass tr{
+    font-size: 80%;
+    height:30px;
+    border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.tableclass td{
+    margin-top: 20px;
+    height: auto;
+    padding: 1%;
+    font-weight: 400;
+}
+
